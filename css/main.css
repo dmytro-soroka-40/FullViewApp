@@ -1,0 +1,585 @@
+@font-face {
+  font-family: 'GillSansMT';
+  src: url('../fonts/GillSansMT.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/GillSansMT.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/GillSansMT.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/GillSansMT.woff') format('woff'),
+    /* Pretty Modern Browsers */ url('../fonts/GillSansMT.TTF')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/GillSansMT.svg#svgFontName')
+      format('svg'); /* Legacy iOS */
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GillSansMT';
+  src: url('../fonts/GillSansMT-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/GillSansMT-Bold.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/GillSansMT-Bold.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/GillSansMT-Bold.woff')
+      format('woff'),
+    /* Pretty Modern Browsers */ url('../fonts/GillSansMT-Bold.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/GillSansMT-Boldsvg#svgFontName')
+      format('svg'); /* Legacy iOS */
+  font-weight: bold;
+}
+
+body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: #26272d;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 62px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+p {
+  color: #8c8f94;
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+a {
+  font-size: 16px;
+  color: #26272d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #26272d;
+}
+
+.btn {
+  border-radius: 21px;
+  background-color: #267df4;
+  color: #fff;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background: #2924bc;
+  color: #fff;
+  box-shadow: 0 8px 20px rgb(37 0 249 / 25%);
+}
+
+.btn:active {
+  background: #2924bc;
+  box-shadow: none;
+}
+
+.btn-ghost {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 25px;
+  border: 1px solid #26272d;
+  transition: box-shadow 0.3s ease;
+}
+
+.btn-ghost:hover {
+  box-shadow: 0 8px 20px rgb(0 0 0/ 25%);
+  transition: box-shadow 0.3s ease;
+}
+
+/* header */
+
+.header {
+  padding-top: 41px;
+  background: url(../img/header.jpg) no-repeat center bottom / cover;
+}
+
+.menu__item {
+  margin-right: 40px;
+  transition: opacity 0.5s ease;
+}
+
+.menu__item:hover {
+  opacity: 0.4;
+}
+
+.menu__link:last-child {
+  margin-right: 0;
+}
+
+.menu__btn {
+  width: 132px;
+  padding: 8px 0 10px;
+}
+
+.logo {
+  width: 133px;
+}
+
+.btn-img_contact {
+  margin-right: 8px;
+}
+
+.offer {
+  max-width: 780px;
+  margin: 125px auto 0;
+  text-align: center;
+}
+
+.offer__text {
+  margin: 30px 0 40px;
+  font-size: 20px;
+}
+
+.offer__btn {
+  align-items: center;
+  margin: 0 auto;
+  width: 205px;
+  height: 50px;
+}
+
+.btn-img_offer {
+  width: 10px;
+  height: 10px;
+  margin-right: 15px;
+  transition: transform 0.5s ease;
+}
+
+.offer__btn:hover .btn-img_offer {
+  transform: scale(1.3);
+  transition: transform 0.5s ease;
+}
+
+.iphone {
+  display: block;
+  margin: 30px auto 0;
+  transition: transform 0.5s ease;
+}
+
+.iphone:hover {
+  transform: scale(1.01);
+}
+
+/* about */
+
+.about {
+  padding: 124px 0 55px;
+}
+
+.about__title {
+  margin-top: 42px;
+  font-size: 26px;
+}
+
+.about__text {
+  max-width: 515px;
+  margin-top: 45px;
+}
+
+.about__text:last-child {
+  margin-top: 20px;
+}
+
+/* propose */
+
+.propose {
+  padding: 55px 0;
+  overflow: hidden;
+}
+
+.app-screen {
+  background: url(../img/iPhone_6_down.png) no-repeat center center / contain;
+  max-width: 770px;
+  width: auto;
+  height: 680px;
+  transition: transform 0.5s ease;
+  margin-left: -120px;
+}
+
+.propose__title {
+  margin: 20px 0 65px;
+}
+
+.propose__text {
+  margin-bottom: 25px;
+}
+
+.propose__text:last-of-type {
+  margin-bottom: 0px;
+}
+
+.propose:hover .app-screen {
+  transform: scale(1.03);
+  transition: transform 0.5s ease;
+}
+
+.propose__btns {
+  margin-top: 70px;
+  display: flex;
+}
+
+.btn_propose {
+  width: 202px;
+  height: 42px;
+  margin-right: 20px;
+}
+
+.btn_propose::after {
+  content: '';
+  display: block;
+  background: url(../img/Arrow_Icon.svg);
+  width: 13px;
+  height: 12px;
+  margin-left: 30px;
+  transition: transform 0.5s ease;
+}
+
+.btn_propose:hover::after {
+  transform: translate(5px, 0px);
+}
+
+.btn-ghost_propose {
+  width: 142px;
+  height: 42px;
+}
+
+/* world */
+
+.world {
+  overflow: hidden;
+  padding: 55px 0 200px;
+}
+
+.world__title {
+  width: 290px;
+  margin-bottom: 60px;
+}
+
+.world__text {
+  margin-bottom: 20px;
+  width: 442px;
+}
+
+.world__text:last-of-type {
+  margin-bottom: 65px;
+}
+
+.world__partners {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.world__partners-wrapper {
+  display: flex;
+}
+
+.world__partner {
+  margin-right: 30px;
+  display: block;
+  width: 138px;
+  transition: transform 0.5s ease;
+}
+
+.world__partner:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+.world__partner:last-of-type {
+  margin-right: 0;
+}
+
+.world-map {
+  background: url(../img/World_Map.svg) no-repeat center center / contain;
+  max-width: 721px;
+  height: 401px;
+  margin-left: -20px;
+  transition: transform 0.5s ease;
+}
+
+.world-map:hover {
+  transform: scale(1.03);
+  transition: transform 0.5s ease;
+}
+
+/* footer */
+
+.footer {
+  padding-bottom: 150px;
+}
+
+.footer-logo {
+  display: block;
+  background: url(../img/logo.svg) no-repeat center center;
+  width: 133px;
+  height: 15px;
+  margin-bottom: 28px;
+}
+
+.footer__text {
+  font-size: 14px;
+  margin-bottom: 25px;
+  max-width: 280px;
+}
+
+.btn_footer {
+  border-radius: 10px;
+  background: black;
+  width: 140px;
+  height: 42px;
+}
+
+.btn_footer:hover {
+  background: rgb(85, 84, 84);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 25%);
+}
+
+.btn_footer__text {
+  font-size: 8px;
+  margin: 0 0 -3px -4px;
+}
+
+.footer__title {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.footer__item > a {
+  font-size: 12px;
+  color: #8c8f94;
+  transition: color 0.5s ease;
+}
+
+.footer__item > a:hover {
+  color: #26272d;
+  transition: color 0.5s ease;
+}
+
+/* media */
+
+@media (max-width: 991.98px) {
+  .propose {
+    padding: 20px 0;
+  }
+
+  .app-screen {
+    height: 700px;
+  }
+
+  .btn_propose::after {
+    display: none;
+  }
+
+  .world {
+    padding: 30px 0 100px;
+  }
+
+  .world__title,
+  .world__text {
+    width: 100%;
+  }
+
+  .world-map {
+    margin-top: 50px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  .iphone {
+    width: 80%;
+  }
+
+  .about__text:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  .app-screen {
+    height: 400px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  .about {
+    padding: 50px 0 20px;
+  }
+
+  .propose__title {
+    margin-bottom: 40px;
+  }
+
+  .propose__text:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  .app-screen {
+    display: none;
+  }
+
+  .footer__list {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 500px) {
+  .footer__list {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 420px) {
+  .offer {
+    margin-top: 80px;
+  }
+
+  .offer__title {
+    font-size: 45px;
+  }
+
+  .offer__text {
+    color: #000;
+    margin-bottom: 40px;
+  }
+
+  .offer__btn {
+    width: 95%;
+    font-weight: 700;
+  }
+
+  .propose__btns {
+    flex-direction: column;
+  }
+
+  .btn_propose {
+    width: 95%;
+    margin: 0 auto 30px;
+  }
+
+  .btn-ghost_propose {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 380px) {
+  .offer {
+    margin-top: 140px;
+    padding-bottom: 120px;
+  }
+
+  .iphone {
+    display: none;
+  }
+
+  .world-map {
+    margin-top: 0;
+    height: 300px;
+  }
+
+  .footer {
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  .offer {
+    margin-top: 140px;
+    padding-bottom: 270px;
+  }
+
+  .footer__list {
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 360px) {
+  .offer {
+    margin-top: 100px;
+    padding-bottom: 140px;
+  }
+}
+
+@media (max-width: 320px) {
+  .offer {
+    margin-top: 70px;
+    padding-bottom: 150px;
+  }
+
+  .offer__title {
+    font-size: 30px;
+  }
+
+  .offer__text {
+    font-size: 14px;
+  }
+
+  .world__partners {
+    text-align: center;
+  }
+
+  .world__partners-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .world__partner {
+    margin-bottom: 20px;
+    display: block;
+    margin-right: 0;
+  }
+  .world-map {
+    margin-top: 50px;
+    height: 200px;
+  }
+  .footer__list {
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 280px) {
+  .offer {
+    margin-top: 100px;
+    padding-bottom: 160px;
+  }
+}
